@@ -1,10 +1,11 @@
 import React from "react";
 
-const Product = ({ title, price, rating }) => {
+const Product = ({image, title, price, rating }) => {
   return (
     <div className="card">
+      <img src={image} alt="" />
       <h1>{title}</h1>
-      <p>{rating}</p>
+      <p>{rating.count}</p>
       <span>{price}</span>
     </div>
   );

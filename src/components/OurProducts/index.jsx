@@ -6,9 +6,8 @@ import './index.css'
 const OurProducts = () => {
   return (
     <div className='products'>
-      {Data.map((item) => (
-        <Product key={item.id} title={item.title} price={item.price} name={item.rating}/>
-
+      {Data.map((item, i) => (
+        <Product key={i} {...item}/>
       ))}
     </div>
   )

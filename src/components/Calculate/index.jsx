@@ -53,7 +53,7 @@ const Calculate = () => {
     function handleEqual(memo) {
         switch (memo.operator) {
             case "+":
-              console.log(memo.value);
+              // console.log(memo.value);
               setText(parseFloat(memo.value) + parseFloat(text));
               break;
             case "-":
